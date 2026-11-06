@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Flex Demo!</h1>
+    <div class="flex-container">
+      <div class="flex-item">
+        <h2>Simple Form</h2>
+        <form action="/response.html">
+          <div class="form-group">
+            <label>First Name:</label>
+            <input type="text" name="fName" />
+          </div>
+          <div class="form-group">
+            <label>Last Name:</label>
+            <input type="text" name="lName" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="flex-item">
+        <h2>Email, Password, Age</h2>
+        <form action="/response.html">
+          <div class="form-group">
+            <label>Email: </label>
+            <input type="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label>Password: </label>
+            <input type="password" name="password" />
+          </div>
+          <div class="form-group">
+            <label>Age:</label>
+            <input type="number" name="age" min="1" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="flex-item">
+        <h2>What is your favorite pet?</h2>
+        <form action="/response.html">
+          <div>
+            <label>
+              <input type="radio" name="favoritePetValue" value="dog" />
+              Dog
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="favoritePetValue" value="cat" id="favoritePetCat" />
+            <label for="favoritePetCat">Cat</label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="favoritePetValue" value="fish" />
+              Fish
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="favoritePetValue" value="bird" />
+              Bird
+            </label>
+          </div>
+          <button type="Submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="flex-item">
+        <h2>What kind of car do you have?</h2>
+        <form action="/response.html">
+          <div>
+            <label>
+              <input type="checkbox" name="carType" value="sedan" />
+              Sedan
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="carType" value="suv" />
+              SUV
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="carType" value="truck" />
+              Truck
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="carType" value="convertible" />
+              Convertible
+            </label>
+          </div>
+          <button type="Submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="flex-item">
+        <h2>Choose a gaming system:</h2>
+        <form action="/response.html">
+          <div>
+            <select name="gamgingSystem">
+              <option value="pc">PC</option>
+              <option value="xbox">Xbox</option>
+              <option value="playstation">Playstation</option>
+              <option value="switch">Switch</option>
+            </select>
+          </div>
+          <button type="Submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

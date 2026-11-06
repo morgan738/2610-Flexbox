@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  border: 2px solid black;
+  padding: 2rem;
+  margin-top: 1rem;
+  flex: 1 1 30%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
